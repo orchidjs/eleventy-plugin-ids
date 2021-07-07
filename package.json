@@ -1,0 +1,21 @@
+{
+  "name": "@orchidjs/eleventy-plugin-ids",
+  "version": "0.1.0",
+  "description": "@11ty plugin for adding ids to html headings and other elements",
+  "main": "eleventy-ids.js",
+  "repository": "https://github.com/orchidjs/eleventy-plugin-ids",
+  "author": {
+      "name": "Josh Schmidt",
+      "url": "https://github.com/oyejorge"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+      "eleventy",
+      "eleventy-plugin",
+	  "11ty",
+	  "ids"
+  ],
+  "dependencies": {
+	  "jsdom": "^16.5.2"
+  }
+}
