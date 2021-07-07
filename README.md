@@ -14,7 +14,7 @@ will become
 ## Installation
 
 ```
-npm install https://github.com/orchidjs/eleventy-plugin-ids
+npm install @orchidjs/eleventy-plugin-ids
 ```
 
 ## Basic Usage
