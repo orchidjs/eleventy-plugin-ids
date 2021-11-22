@@ -6,7 +6,7 @@ module.exports = function( eleventyConfig, config = {} ) {
 	const prefix	= config.prefix || '';
 	const formatter	= config.formatter || function(element,existing_ids){
 		
-		var id = config.prefix + eleventyConfig.javascriptFunctions.slug(element.textContent).replace(/[&,+()$~%.'":*?!<>{}]/g, "");
+		var id = prefix + eleventyConfig.javascriptFunctions.slug(element.textContent).replace(/[&,+()$~%.'":*?!<>{}]/g, "");
 		
 		if( existing_ids.indexOf(id) >= 0 ){}
 		
