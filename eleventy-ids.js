@@ -32,7 +32,12 @@ module.exports = function( eleventyConfig, config = {} ) {
 					return;
 				}
 				
-				element.setAttribute('id',formatter(element,ids));
+				const value = formatter(element,ids);
+				if (value === null) {
+					element.removeAttribute('id');
+				} else {
+					element.setAttribute('id', value);
+				}
 			});
 		});
 

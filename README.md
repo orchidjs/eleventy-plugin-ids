@@ -42,8 +42,11 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPlugin(anchors_plugin,{
 		selectors: ['h1','h2','h3','h4','h5','h6'],
 		prefix: 'custom-id-prefix-',
-		formatter: function(element,existing_ids_array){
-			return '--generate-a-custom-id-here-',
+		formatter(element, existing_ids_array) {
+			if (element.classList.contains('no-anchor'))
+				return null; // removes any existing id and prevents the formatter from creating a new one
+			else
+				return '--generate-a-custom-id-here-',
 		}
 	});
 	
