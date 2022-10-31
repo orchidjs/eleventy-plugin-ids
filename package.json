@@ -16,6 +16,6 @@
 	  "ids"
   ],
   "dependencies": {
-	  "jsdom": "^18.0.1"
+	  "jsdom": "^20.0.2"
   }
 }
